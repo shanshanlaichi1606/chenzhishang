@@ -1,0 +1,18 @@
+
+server.port=8761
+spring.application.name=eureka-server
+
+#eureka.instance.hostname= ${spring.cloud.client.ipAddress}
+#eureka.instance.instance-id=${spring.cloud.client.ipAddress}:${server.port}
+#eureka.instance.prefer-ip-address=true
+
+
+eureka.server.enable-self-preservation=false      
+eureka.server.eviction-interval-timer-in-ms=10000  
+
+# true 注册自身到服务 集群开启
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+
+
+
