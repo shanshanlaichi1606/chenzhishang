@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*-----mainbody content-----*/
+a, button{cursor:pointer;}
+.main{min-width:768px;padding:15px;}
+.board{width: 100%; background: #fff;border-radius: 2px;padding-bottom: 30px;}
+.tap_line{width: 100%;height: 1px;background: #6BA8E1;position: relative;top: 82px;}
+.board_content{padding: 20px ;}
+.index{line-height: 14px;font-size: 14px;margin-bottom: 20px;}
+.tap_btn li{width: 75px; height: 26px;float: left;text-align: center;  border:1px solid #6BA8E1;border-radius: 2px;margin-right: 4px;background: #6BA8E1;color: #fff;margin-bottom: 10px;}
+.tap_btn li.selected_btn{background: #fff;color: #6BA8E1;border-bottom: 1px solid #fff; position: relative;}
+.tap_content{padding-top: 76px;}
+.tap_content span{font-size: 20px;}
+.license_btn{float: right;}
+.license_btn button{border: 1px solid  #375d81;border-radius: 4px;padding: 6px 14px 6px 14px;font-size: 16px;background: none;color: #375d81;}
+.alert {display: block; float: right; width: 16px; height: 16px; background: url(../images/sprite_search.png)  -30px -7px;margin-left: 4px;}
+.com_table{margin-top: 20px;border-bottom: 1px dashed #404040;padding-bottom: 20px;}
+.license_table, .alert_table {margin-top: 20px;}
+.com_info, .license_info, .alert_info, .stats_info {width: 100%;}
+.pic img {margin-bottom: 16px;}
+.com_info th, .license_info th {color: #808080;text-align: right;padding-right:40px;vertical-align: top;}
+i {color:#FF0000;}
+.alert_text, .stats{display: block; width: 100%; border-bottom: 1px solid #808080;}
+.stats{margin-top: 10px;}
+.stats_table{margin-top: 20px;}
+.alert_icon, .stats_icon{display: block; float: left; width: 28px; height: 28px;margin-right: 4px;margin-top:4px;}
+.alert_icon{ background: url(../images/sprite_search.png)  -23px -31px;}
+.stats_icon{ background: url(../images/sprite_search.png)  -23px -66px;}
+.alert_info th{text-align: left;font-weight: bold;font-size: 14px;}
+.alert_info td {min-width: 40px;}
+.stats_info td{min-width: 40px;text-align: center;}
+td h1{ width: 150px;height: 150px;background: url(../images/circle.png) no-repeat center ;color: #405a6a;font: italic 36px/20px arial,sans-serif;margin:0 auto;line-height: 150px;}

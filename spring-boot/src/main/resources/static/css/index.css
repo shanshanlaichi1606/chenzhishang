@@ -1,0 +1,72 @@
+@charset "utf-8";
+body{background:#d8d7cd url(../images/body_tbg.png) 0 0 repeat-x;}
+/*--index--*/
+.wrap{width:100%;height:100%;margin:0;padding:0;background:url(../images/header_bg.png) 50% 0 no-repeat; position:relative;z-index:0;}
+.header{min-width:1000px;height:60px;position:relative;z-index:1;}
+.h_lf{width:512px;height:55px;position:absolute;top:2px;left:3px;}
+.login_logo{display:block;width:55px;height:100%;background:url(../images/logo_flag_inner.png) 50% 50% no-repeat;float:left;margin-right:5px;}
+.login_text{display:block;width:450px;height:100%;background:url(../images/icon_sprite.png) 0 -485px no-repeat;float:left;}
+.h_cc{background:url(../images/h_ccbg.png) 0 0 no-repeat;padding-left:31px;position:absolute;top:-7px;right:0;}
+.cc_list{display:block;min-width:300px;height:30px;padding:8px 125px 3px 0;background:url(../images/h_ccbg.png) 0 -41px repeat-x;}
+.cc_list li{float:left;margin-right:10px;}
+.cc_list li span{font:13px/27px 'Simsun';color:#666;float:left;margin-left:5px;}
+.cc_list li span em{font-style:normal;color:#333;margin-right:5px;}
+.cc_list li.login{margin-right:0;position:absolute;top:8px;right:15px;}
+.cc_list li.login a{font:13px/27px 'Simsun';color:#333;text-decoration:underline;margin:0 5px;}
+.cc_list li.login a:hover{color:#146cc7;}
+i.i_user,i.i_unit{display:inline-block;width:25px;height:25px;background:url(../images/icon_sprite.png) no-repeat;float:left;}
+i.i_user{background-position:-8px -290px;}
+i.i_unit{background-position:-47px -291px;}
+/*--------主体mainbody↓--------*/
+.mainbody{min-width:1000px;min-height:260px;height:auto;vertical-align:middle;position:relative;z-index:1;}
+/*--------主体leftBar↓---------*/
+.main_left{width:200px;min-height:300px;border-radius:15px;box-shadow:0px 1px 12px #83827b;overflow:hidden;position:relative;z-index:250;margin-left:10px;float:left;}
+.lf_top,.lf_btm{width:100%;height:25px;background:url(../images/left_bg.png) no-repeat;position:absolute;left:0;}
+.lf_top{background-position:0 -3px;top:0;}
+.lf_btm{background-position:0 -81px;bottom:-1px;}
+.lf_center{width:100%;min-height:87%;height:auto;background:white;position:absolute;top:25px;left:0;/* overflow-x:hidden;overflow-y:auto; */}
+.left_nav,.lfnav_list{list-style:none;}
+.left_nav dt,.left_nav dt a{display:block;height:37px;}
+.left_nav dt{border-top:1px solid #fff;}
+.left_nav dt a{overflow:hidden;font:bold 15px/37px 'Simsun';background:#eee url(../images/icon_sprite.png) 0 -393px no-repeat;padding-left:10px;transition:.4s ease all;}
+.left_nav dt a span{color:#5d8cc1;float:left;}
+i.i_l1,i.i_l2,i.i_l3,i.i_l4,i.i_l5{display:inline-block;width:21px;height:21px;overflow:hidden;background:url(../images/icon_sprite.png) no-repeat;float:left;margin:7px 10px 0 0;}
+i.i_l1{background-position:-101px -292px;}
+i.i_l2{background-position:-125px -294px;}
+i.i_l3{background-position:-148px -292px;}
+i.i_l4{background-position:-171px -293px;}
+i.i_l5{background-position:-194px -293px;}
+.left_nav dt a:hover span{color:#146cc7;}
+.left_nav dt a.default{background:#eee url(../images/icon_sprite.png) 0 -333px no-repeat;}
+.left_nav dt a.default span{color:#5ca407;}
+.left_nav dd{display:none;height:auto;border-bottom:1px solid #ccc;position:relative;overflow-x:hidden;overflow-y:auto;}
+.left_nav dd.default{display:block;}
+.lfnav_list{margin-left:17px;}
+.lfnav_list li{min-height:30px;height:auto;}
+.lfnav_list li a{display:block;height:24px;font:14px/24px 'Simsun';color:#333;padding:3px 0 3px 22px;background:#fff url(../images/icon_sprite.png) -10px -445px no-repeat;}
+.lfnav_list li a:hover{color:#358d03;}
+.lfnav_list li a.default{/* background:url(../images/left_bg.png) 0 -40px no-repeat;color:#fff; */background:url(../images/icon_sprite.png) -490px -445px no-repeat;color:#358d03;font-weight:bold;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.lfnav_list li ul.lfnav_list{display:none;}
+/*--------主体main_con↓--------*/
+.main_con{min-height:250px;vertical-align:top;padding-left:222px;position:relative;}
+/*--------mc_top---------*/
+.mc_top{height:25px;position:relative;padding:0 63px 0 0;z-index:100;}
+/*--------mc_bar---------*/
+.mc_bar{width:100%;height:25px;overflow:hidden;position:relative;top:0px;}
+.mc_bar a{display:inline-block;height:25px;margin:0 4px 0 0;padding:0;position:relative;bottom:0px;float:left;max-width:150px;}
+.mc_bar a span{display:block;height:21px;font:13px/21px 'Simsun'; text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-align:center; padding:3px 10px 1px 9px;border-radius:4px 4px 0 0;color:#666;background:url(../images/tab_bg.png) 0 0 repeat-x;}
+.mc_bar a:hover span{color:#146cc7;}
+.mc_bar a.default span{color:#fff;background:url(../images/tab_bg.png) 0 -35px repeat-x;border-left:1px solid #6eb7fb;border-right:1px solid #6eb7fb;}
+i.i_cross{display:inline-block;width:11px;height:11px;position:absolute;top:2px;right:2px;cursor:default;background:#fff url(../images/icon_sprite.png) -91px -284px no-repeat;}
+i.i_cross:hover,.mc_bar a.default i.i_cross{background:#f4fafa url(../images/icon_sprite.png) -91px -284px no-repeat;}
+/*--------mc_box---------*/
+.mc_box{width:98%;height:auto;background:white;position:relative;box-shadow:0px 1px 12px #83827b;}
+.decoration{width:40px;height:40px;background:url(../images/icon_sprite.png) -467px -165px no-repeat;position:absolute;top:-30px;right:-10px;}
+.mc_tab,.layer{width:100%;height:100%;position:relative;}
+.layer{display:none;background:url(../images/loading.gif) 50% 36% no-repeat;}
+.default{display:block;}
+iframe.main_iframe{width:100%;height:100%;position:relative;overflow-x:hidden;overflow-y:auto;}
+/*--------footer---------*/
+.footer{min-width:1004px;height:40px;padding:0 12px;margin-top:12px;position:relative;z-index:1;}
+.footer_con{background:#eee;border-radius:15px 0 0 0;}
+.footer_con p{color:#666;font:12px/40px 'Simsun';text-align:center;}

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit" />
+<title>上海市餐饮食品安全信息追溯系统-监管网站</title>
+<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#particles-js {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+</style>
+</head>
+<body>
+	<div class="wrap_login">
+		<div class="login_header">
+			<div class="lh_content">
+				<h1 class="login_logo"></h1>
+				<h2 class="login_text"></h2>
+			</div>
+		</div>
+		<div class="login_mainbody">
+			<div class="login_content">
+				<form th:action="@{/check_login}" method="post">
+					<h3 class="login_title">系统登录</h3>
+					<ul class="login_list">
+						<li><input type="text" class="login_user" value="admin" name="username" placeholder="用户名" /></li>
+						<li><input type="password" class="login_pwd" value="111111" name="password" placeholder="密码" /></li>
+						<li style="padding:0;" th:if="${session.loginErrorCount} and ${session.loginErrorCount}>3">
+							<input type="text" class="" style=" width: 120px;height: 40px;text-aligin:center; "   value="" name="validateCode" placeholder="请输入验证码" />
+							 <img style="cursor: pointer;position: absolute; "  onClick="this.src='/login/ValidateCode.jpg?' + new Date().getTime();" src="/login/ValidateCode.jpg"/>
+						</li>
+						<li style="padding:5px 0 0 0;text-align: center;" th:if="${param.error} and ${session.errorMsg}" >	
+							<span style="color: red;" th:text="${session.errorMsg.message}"></span>
+						</li>
+					</ul>
+						
+					<input type="submit" class="btn_login" value="登录" />
+				 </form>
+			</div>
+		</div>
+		<div class="login_footer">
+			<p>技术支持单位 万达信息股份有限公司 备案号 沪ICP备12026857号</p>
+		</div>
+		<!--particles-->
+		<div id="particles-js"></div>
+	</div>
+</body>
+</html>

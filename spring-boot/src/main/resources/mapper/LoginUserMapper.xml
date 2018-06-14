@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wondersgroup.demo.mapper.LoginUserMapper">
+	<resultMap id="BaseResultMap" type="com.wondersgroup.demo.entity.LoginUser">
+		<id column="ID" jdbcType="INTEGER" property="id" />
+		<result column="USER_ID" jdbcType="VARCHAR" property="userId" />
+		<result column="USER_TYPE" jdbcType="VARCHAR" property="userType" />
+		<result column="USERNAME" jdbcType="VARCHAR" property="username" />
+		<result column="PASSOWRD" jdbcType="VARCHAR" property="passowrd" />
+		<result column="NAME" jdbcType="VARCHAR" property="name" />
+		<result column="SEX" jdbcType="VARCHAR" property="sex" />
+		<result column="PHONE" jdbcType="VARCHAR" property="phone" />
+		<result column="MOBILE_PHONE" jdbcType="VARCHAR" property="mobilePhone" />
+		<result column="EMAIL" jdbcType="VARCHAR" property="email" />
+		<result column="FLAG" jdbcType="INTEGER" property="flag" />
+		<result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+	</resultMap>
+
+	<select id="searchList" resultMap="BaseResultMap">
+		select * from LOGIN_USER
+	</select>
+</mapper>
